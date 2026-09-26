@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #2f4156;
+  background: #f5efeb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #f5efeb; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: #c8d9e6; color: #2f4156; }
+
+.font-mono-lucid { font-family: 'DM Mono', monospace; }
+
+.grain::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: .045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(47,65,86,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(47,65,86,.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.text-balance { text-wrap: balance; }
+
+
+.hero-enter { animation: lucid-rise .8s cubic-bezier(.22,1,.36,1) both; }
+.lucid-orbit { animation: lucid-spin 22s linear infinite; }
+.service-row { animation: lucid-rise .7s cubic-bezier(.22,1,.36,1) both; }
+.service-row:nth-child(2) { animation-delay: .08s; }
+.service-row:nth-child(3) { animation-delay: .16s; }
+.faq-answer { max-height: 0; opacity: 0; transition: max-height .35s ease, opacity .25s ease; }
+.faq-answer.faq-open { max-height: 240px; opacity: 1; }
+@keyframes lucid-rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes lucid-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .hero-enter, .service-row, .lucid-orbit { animation: none; } .faq-answer { transition: none; } }
