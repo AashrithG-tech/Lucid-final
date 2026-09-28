@@ -192,8 +192,8 @@ function App() {
                                 Explore the approach
 
                                 <span className="grid h-10 w-10 place-items-center rounded-full border border-[#2f4156]/30 transition group-hover:bg-[#2f4156] group-hover:text-[#f5efeb]">
-                  <ArrowDownRight className="h-4 w-4" />
-                </span>
+                                    <ArrowDownRight className="h-4 w-4" />
+                                </span>
                             </a>
                         </div>
 
@@ -220,8 +220,8 @@ function App() {
                                     The internet is loud.
                                     <br />
                                     <span className="text-[#c8d9e6]">
-                    Your marketing doesn't have to be.
-                  </span>
+                                        Your marketing doesn't have to be.
+                                    </span>
                                 </h2>
 
                                 <p className="mt-10 max-w-2xl text-base leading-8 text-[#f5efeb]/65">
@@ -242,9 +242,9 @@ function App() {
                                     key={n}
                                     className="border-b border-[#f5efeb]/15 p-7 first:pl-0 md:border-b-0 md:border-r md:p-10 md:first:pl-0 md:last:border-r-0"
                                 >
-                  <span className="font-mono-lucid text-xs text-[#c8d9e6]">
-                    {n}
-                  </span>
+                                    <span className="font-mono-lucid text-xs text-[#c8d9e6]">
+                                        {n}
+                                    </span>
 
                                     <h3 className="mt-12 text-xl font-semibold">{t}</h3>
 
@@ -275,8 +275,8 @@ function App() {
                                     Five services.
                                     <br />
                                     <span className="text-[#567c8d]">
-                    One clear goal.
-                  </span>
+                                        One clear goal.
+                                    </span>
                                 </h2>
 
                             </div>
@@ -287,7 +287,6 @@ function App() {
 
                         </div>
 
-                        {/* ALL 5 SERVICES ARE MAPPED HERE */}
                         <div className="mt-20 border-t border-[#2f4156]/15">
 
                             {services.map((s) => {
@@ -300,9 +299,9 @@ function App() {
                                         className="service-row group grid gap-8 border-b border-[#2f4156]/15 py-10 md:grid-cols-[.2fr_1fr_.9fr_.5fr] md:items-center"
                                     >
 
-                    <span className="font-mono-lucid text-xs text-[#567c8d]">
-                      {s.n}
-                    </span>
+                                        <span className="font-mono-lucid text-xs text-[#567c8d]">
+                                            {s.n}
+                                        </span>
 
                                         <div>
 
@@ -316,8 +315,8 @@ function App() {
                                                         key={t}
                                                         className="rounded-full border border-[#2f4156]/15 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider"
                                                     >
-                            {t}
-                          </span>
+                                                        {t}
+                                                    </span>
                                                 ))}
                                             </div>
 
@@ -329,9 +328,9 @@ function App() {
 
                                         <div className="hidden justify-end md:flex">
 
-                      <span className="grid h-12 w-12 place-items-center rounded-full border border-[#2f4156]/15 transition group-hover:bg-[#c8d9e6]">
-                        <Icon className="h-5 w-5" />
-                      </span>
+                                            <span className="grid h-12 w-12 place-items-center rounded-full border border-[#2f4156]/15 transition group-hover:bg-[#c8d9e6]">
+                                                <Icon className="h-5 w-5" />
+                                            </span>
 
                                         </div>
 
@@ -363,8 +362,8 @@ function App() {
                                     Lucid started with a question:
                                     <br />
                                     <span className="text-[#567c8d]">
-                    what if less could mean more?
-                  </span>
+                                        what if less could mean more?
+                                    </span>
                                 </h2>
 
                                 <div className="mt-12 grid gap-8 text-sm leading-7 text-[#2f4156]/70 md:grid-cols-2">
@@ -382,9 +381,9 @@ function App() {
                         </div>
 
                         <div className="mt-24 flex flex-col gap-6 border-t border-[#2f4156]/20 pt-8 md:flex-row md:items-center md:justify-between">
-              <span className="font-mono-lucid text-xs uppercase tracking-[.2em]">
-                A blueprint for a different kind of partner.
-              </span>
+                            <span className="font-mono-lucid text-xs uppercase tracking-[.2em]">
+                                A blueprint for a different kind of partner.
+                            </span>
 
                             <div className="flex items-center gap-4 text-sm font-semibold">
                                 <span className="h-px w-16 bg-[#2f4156]/30" />
@@ -412,8 +411,8 @@ function App() {
                                     Good marketing isn't
                                     <br />
                                     <span className="text-[#567c8d]">
-                    complicated.
-                  </span>
+                                        complicated.
+                                    </span>
                                 </h2>
 
                                 <div className="mt-14 grid gap-10 md:grid-cols-2">
@@ -428,9 +427,9 @@ function App() {
                                             key={x}
                                             className="flex gap-4 border-t border-[#2f4156]/15 pt-5"
                                         >
-                      <span className="font-mono-lucid text-xs text-[#567c8d]">
-                        0{i + 1}
-                      </span>
+                                            <span className="font-mono-lucid text-xs text-[#567c8d]">
+                                                0{i + 1}
+                                            </span>
 
                                             <p className="font-semibold leading-6">
                                                 {x}
@@ -466,8 +465,8 @@ function App() {
                                     signal
                                     <br />
                                     <span className="text-[#c8d9e6]">
-                    clear.
-                  </span>
+                                        clear.
+                                    </span>
                                 </h2>
 
                             </div>
@@ -521,9 +520,9 @@ function App() {
                                             onClick={() => setOpenFaq(open ? null : i)}
                                             className="flex w-full items-center justify-between gap-8 py-7 text-left"
                                         >
-                      <span className="text-lg font-semibold">
-                        {q}
-                      </span>
+                                            <span className="text-lg font-semibold">
+                                                {q}
+                                            </span>
 
                                             {open
                                                 ? <Minus className="shrink-0" />
@@ -572,8 +571,8 @@ function App() {
                                     Have something
                                     <br />
                                     <span className="text-[#c8d9e6]">
-                    worth building?
-                  </span>
+                                        worth building?
+                                    </span>
                                 </h2>
 
                             </div>
@@ -584,11 +583,12 @@ function App() {
                                     Tell us what you're trying to solve, build or grow. We'll keep the first conversation clear and useful.
                                 </p>
 
+                                {/* EMAIL — UPDATED */}
                                 <a
-                                    href="mailto:hello@lucid.studio"
+                                    href="mailto:lucidsocialagency@gmail.com"
                                     className="mt-8 inline-flex items-center gap-3 border-b border-[#c8d9e6]/50 pb-2 text-lg font-semibold"
                                 >
-                                    hello@lucid.studio
+                                    lucidsocialagency@gmail.com
                                     <ArrowUpRight className="h-4 w-4" />
                                 </a>
 
@@ -598,20 +598,23 @@ function App() {
 
                         <div className="mt-24 flex flex-col justify-between gap-8 border-t border-[#f5efeb]/15 pt-7 md:flex-row md:items-center">
 
-              <span className="font-mono-lucid text-xs uppercase tracking-[.2em] text-[#f5efeb]/50">
-                Lucid / Bengaluru / India
-              </span>
+                            <span className="font-mono-lucid text-xs uppercase tracking-[.2em] text-[#f5efeb]/50">
+                                Lucid / Bengaluru / India
+                            </span>
 
                             <div className="flex gap-3">
 
+                                {/* INSTAGRAM — UPDATED */}
                                 <a
                                     aria-label="Instagram"
-                                    href="#"
+                                    href="https://www.instagram.com/lucidsocial.in?stkn=a2JkYXJtbDV1dzA%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="grid h-10 w-10 place-items-center rounded-full border border-[#f5efeb]/20 hover:bg-[#f5efeb] hover:text-[#2f4156]"
                                 >
-                  <span className="text-[11px] font-bold">
-                    IG
-                  </span>
+                                    <span className="text-[11px] font-bold">
+                                        IG
+                                    </span>
                                 </a>
 
                                 <a
@@ -619,14 +622,15 @@ function App() {
                                     href="#"
                                     className="grid h-10 w-10 place-items-center rounded-full border border-[#f5efeb]/20 hover:bg-[#f5efeb] hover:text-[#2f4156]"
                                 >
-                  <span className="text-[10px] font-bold">
-                    in
-                  </span>
+                                    <span className="text-[10px] font-bold">
+                                        in
+                                    </span>
                                 </a>
 
+                                {/* EMAIL ICON — UPDATED */}
                                 <a
                                     aria-label="Email"
-                                    href="mailto:hello@lucid.studio"
+                                    href="mailto:lucidsocialagency@gmail.com"
                                     className="grid h-10 w-10 place-items-center rounded-full border border-[#f5efeb]/20 hover:bg-[#f5efeb] hover:text-[#2f4156]"
                                 >
                                     <Mail className="h-4 w-4" />
@@ -643,13 +647,13 @@ function App() {
 
             <footer className="flex flex-col justify-between gap-3 bg-[#2f4156] px-5 pb-8 text-[10px] uppercase tracking-[.16em] text-[#f5efeb]/35 md:flex-row md:px-8">
 
-        <span>
-          © {new Date().getFullYear()} Lucid
-        </span>
+                <span>
+                    © {new Date().getFullYear()} Lucid
+                </span>
 
                 <span>
-          Clear thinking. Deliberate execution. Measurable growth.
-        </span>
+                    Clear thinking. Deliberate execution. Measurable growth.
+                </span>
 
             </footer>
 
